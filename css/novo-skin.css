@@ -1,0 +1,31 @@
+/* ═══ PLAGAS NOVO — piel propia (verde salina) ═══
+   Override del tema base: azul→verde salina, tipografía técnica */
+:root{
+  --verde:#11402f; --verde2:#1d5c43; --sal:#eae2d0; --crema:#f6f2e8;
+  --acento:#c77d2e; --tinta:#15201a;
+}
+body{background:var(--crema)!important;color:var(--tinta)}
+/* header */
+header, .header{background:var(--verde)!important}
+.logo, header a, .header a{color:var(--sal)!important}
+.logo-icon{background:var(--sal)!important;color:var(--verde)!important;font-weight:700}
+.nav-cta, .btn-cta, .phonelink{background:var(--acento)!important;color:#fff!important}
+/* hero */
+.hero, .intro-banner, section.intro-banner{background:linear-gradient(150deg,var(--verde) 0%,var(--verde2) 100%)!important;color:var(--sal)}
+.hero h1, .intro-banner h1{color:var(--sal)!important;letter-spacing:-.01em}
+.hero p, .intro-banner p{color:#cfe0d2!important}
+/* botones */
+.btn-rojo, button.btn-rojo, .btn-primary{background:var(--acento)!important;color:#fff!important;border-radius:3px!important}
+.btn-rojo:hover{background:var(--tinta)!important}
+/* tarjetas servicio */
+.srv-card, .service-card{background:#fff!important;border:1px solid #e3dccb!important;border-radius:3px!important}
+.srv-card:hover{border-color:var(--acento)!important}
+/* franjas */
+.urgency-strip{background:var(--tinta)!important;color:var(--sal)!important}
+section:nth-of-type(even){background:var(--sal)!important}
+/* footer */
+footer, .footer{background:var(--tinta)!important;color:#b8c4ba}
+.footer h4{color:var(--sal)!important}
+/* detalles: enlaces */
+a{color:var(--verde2)}
+a:hover{color:var(--acento)}
