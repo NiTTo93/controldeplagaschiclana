@@ -94,3 +94,10 @@ p a{color:var(--verde2)!important}
 .nav-dropdown-menu, .dropdown-menu{background:#fff!important}
 .nav-dropdown-menu a, .dropdown-menu a{color:var(--tinta)!important;font-weight:600}
 .nav-dropdown-menu a:hover, .dropdown-menu a:hover{background:var(--crema)!important;color:var(--verde2)!important}
+
+/* ── Botón WhatsApp flotante ── */
+.wa-float{position:fixed;bottom:18px;right:18px;z-index:999;width:56px;height:56px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
