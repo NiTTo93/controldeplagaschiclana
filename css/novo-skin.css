@@ -34,3 +34,58 @@ a:hover{color:var(--acento)}
 .contact-cards{display:flex;flex-direction:column;gap:16px;margin-top:18px}
 .contact-card{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid var(--border,#e5e7eb);border-radius:12px;padding:16px 18px}
 .contact-icon{font-size:1.6rem;line-height:1}
+
+/* ═══ PURGA AZUL COMPLETA — cobertura de TODOS los selectores del tema base ═══ */
+
+/* page-hero de páginas interiores (el gradiente azul que se cuela) */
+.page-hero, .page-header, .inner-hero{
+  background:linear-gradient(150deg,var(--verde) 0%,var(--verde2) 60%,var(--tinta) 100%)!important;
+}
+.page-hero h1, .page-header h1, .inner-hero h1{color:var(--sal)!important}
+
+/* botones secundarios y outline */
+.btn-secondary, button.btn-secondary{background:var(--verde2)!important;color:var(--sal)!important}
+.btn-secondary:hover{background:var(--tinta)!important}
+.btn-outline{color:var(--verde2)!important;border-color:var(--verde2)!important}
+.btn-outline:hover{background:var(--verde2)!important;color:#fff!important}
+
+/* enlaces y titulares con azul heredado */
+a, .link{color:var(--verde2)}
+.section-title, h2, h3{color:var(--tinta)!important}
+.section-title em, h2 em{color:var(--acento)!important}
+
+/* breadcrumbs */
+.breadcrumbs a{color:var(--acento)!important}
+.breadcrumbs a:hover{color:var(--tinta)!important}
+
+/* stats / cifras destacadas */
+.stat-number, .stat .number{color:var(--acento)!important}
+
+/* badges bg-blue */
+.bg-blue{background:var(--verde2)!important;color:var(--sal)!important}
+
+/* iconos cuadrados de cabecera de tarjeta */
+.service-icon, .card-icon, .icon-box{background:var(--verde2)!important;color:var(--sal)!important}
+
+/* hover/bordes en tarjetas */
+.card:hover, .service-card:hover, .post-card:hover{border-color:var(--verde2)!important}
+
+/* headers de tabla, tablas de precios */
+th, thead, .price-header, .pricing-header{background:var(--verde)!important;color:var(--sal)!important}
+
+/* formularios: focus y labels */
+input:focus, textarea:focus, select:focus{border-color:var(--verde2)!important;box-shadow:0 0 0 3px rgba(29,92,67,.12)!important}
+.form-group label{color:var(--tinta)}
+
+/* footer si hereda azul */
+.footer, footer{background:var(--tinta)!important}
+.footer a{color:var(--sal)!important}
+
+/* enlaces activos de nav */
+nav a.active, .nav a.active{color:var(--sal)!important;border-bottom-color:var(--acento)!important}
+
+/* selección de texto */
+::selection{background:var(--verde2);color:var(--sal)}
+
+/* pulir: cualquier azul residual genérico en texto de párrafo */
+p a{color:var(--verde2)!important}
