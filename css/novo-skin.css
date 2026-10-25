@@ -89,3 +89,8 @@ nav a.active, .nav a.active{color:var(--sal)!important;border-bottom-color:var(-
 
 /* pulir: cualquier azul residual genérico en texto de párrafo */
 p a{color:var(--verde2)!important}
+
+/* ── Dropdown del menú: texto tinta sobre blanco (contraste real) ── */
+.nav-dropdown-menu, .dropdown-menu{background:#fff!important}
+.nav-dropdown-menu a, .dropdown-menu a{color:var(--tinta)!important;font-weight:600}
+.nav-dropdown-menu a:hover, .dropdown-menu a:hover{background:var(--crema)!important;color:var(--verde2)!important}
