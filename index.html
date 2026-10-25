@@ -500,12 +500,94 @@
 </section>
 
 <!-- MAP -->
-<section class="section bg-light map-section">
+<section class="section bg-light map-section" id="ubicacion">
   <div class="container">
     <h2 class="section-title">Encuéntranos en Chiclana</h2>
     <p class="section-subtitle">En la Calle de la Plaza, 3. Atendemos toda la ciudad.</p>
     <div class="map-wrapper">
       <iframe src="https://www.google.com/maps?q=Calle+de+la+Plaza,+3,+11130+Chiclana+de+la+Frontera,+C%C3%A1diz&output=embed" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACTO INLINE — absorbe la intención "contactar" sin canibalizar /contacto.html ═══ -->
+<section class="section" id="contacto" itemscope itemtype="https://schema.org/ContactPage">
+  <div class="container">
+    <div class="two-cols">
+      <div>
+        <h2 class="section-title" style="text-align:left;">Contacta con Plagas Novo</h2>
+        <p class="section-subtitle" style="text-align:left;margin-left:0;">Llámanos, escríbenos por WhatsApp o pide tu presupuesto sin compromiso.</p>
+        <div class="contact-cards">
+          <div class="contact-card" itemprop="department" itemscope itemtype="https://schema.org/LocalBusiness">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h3 style="margin:0 0 4px;">Teléfono</h3>
+              <a href="tel:856634720" itemprop="telephone" style="font-size:1.25rem;font-weight:700;">856 634 720</a>
+              <p style="margin:4px 0 0;color:var(--muted);font-size:.9rem;">Lunes a Viernes 8-20h · Sábados 9-14h</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h3 style="margin:0 0 4px;">Dirección</h3>
+              <p style="margin:0;" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Calle de la Plaza, 3</span><br>
+                <span itemprop="postalCode">11130</span> <span itemprop="addressLocality">Chiclana de la Frontera</span> (<span itemprop="addressRegion">Cádiz</span>)
+              </p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">⚡</span>
+            <div>
+              <h3 style="margin:0 0 4px;">Urgencias</h3>
+              <p style="margin:0;">Atendemos urgencias de plagas el <b>mismo día</b> en Chiclana y alrededores. Llama y un técnico te responde.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form-wrapper">
+          <h2>Pide presupuesto sin compromiso</h2>
+          <p class="form-subtitle">Inspección y diagnóstico gratuitos en Chiclana.</p>
+          <form action="https://forms.reformaschiclana.es/webform" method="POST">
+            <input type="hidden" name="site" value="controldeplagaschiclana">
+            <input type="hidden" name="_subject" value="Nuevo presupuesto - Plagas Novo">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://controldeplagaschiclana.es/gracias.html">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre-c">Nombre *</label>
+                <input type="text" name="nombre" id="nombre-c" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="telefono-c">Teléfono *</label>
+                <input type="tel" name="telefono" id="telefono-c" placeholder="Tu teléfono" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tipo-c">Tipo de plaga *</label>
+              <select name="tipo" id="tipo-c" required>
+                <option value="">Selecciona tipo de plaga</option>
+                <option value="cucarachas">Cucarachas</option>
+                <option value="roedores">Roedores (ratas/ratones)</option>
+                <option value="mosquitos">Mosquitos</option>
+                <option value="chinches">Chinches</option>
+                <option value="termitas">Termitas/Carcoma</option>
+                <option value="avispas">Avispas</option>
+                <option value="hormigas">Hormigas</option>
+                <option value="otra">Otra plaga</option>
+                <option value="desinfeccion">Desinfección</option>
+                <option value="legionella">Legionella</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje-c">Describe tu problema *</label>
+              <textarea name="mensaje" id="mensaje-c" placeholder="Cuéntanos dónde está la plaga y desde cuándo..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar solicitud de presupuesto</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>

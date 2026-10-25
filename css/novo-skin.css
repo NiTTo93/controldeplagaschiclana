@@ -29,3 +29,8 @@ footer, .footer{background:var(--tinta)!important;color:#b8c4ba}
 /* detalles: enlaces */
 a{color:var(--verde2)}
 a:hover{color:var(--acento)}
+
+/* ── Contact cards (sección contacto inline home) ── */
+.contact-cards{display:flex;flex-direction:column;gap:16px;margin-top:18px}
+.contact-card{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid var(--border,#e5e7eb);border-radius:12px;padding:16px 18px}
+.contact-icon{font-size:1.6rem;line-height:1}
