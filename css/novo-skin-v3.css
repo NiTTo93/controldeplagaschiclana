@@ -101,3 +101,5 @@ p a{color:var(--verde2)!important}
   box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .2s}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float svg{width:30px!important;height:30px!important;max-width:30px!important;max-height:30px!important}
+.wa-float{width:56px!important;height:56px!important;flex:0 0 56px!important;line-height:0!important}
