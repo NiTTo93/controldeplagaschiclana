@@ -99,6 +99,15 @@
  ]
 }
 </script>
+<style>
+/* Sticky mobile bar — conversión urgencias */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:2000;display:none;gap:8px;padding:10px 12px;background:#fff;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.sticky-cta a{flex:1;text-align:center;padding:12px 8px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;line-height:1.2}
+.sticky-cta .btn-llamar{background:#d93025;color:#fff}
+.sticky-cta .btn-retell{background:#1a4f8b;color:#fff}
+.sticky-cta small{display:block;font-weight:400;font-size:11px;opacity:.85}
+@media(max-width:768px){.sticky-cta{display:flex}body{padding-bottom:64px}}
+</style>
 </head>
 <body>
 
@@ -729,5 +738,11 @@
 function toggleMenu(){document.getElementById('hamburger').classList.toggle('active');document.getElementById('navMenu').classList.toggle('active');}
 </script>
 <a href="https://wa.me/34856634720?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20control%20de%20plagas%20en%20Chiclana" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" style="width:30px;height:30px;fill:#fff;"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.6c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22c-1.2 0-2.4-.3-3.5-.8l-.6-.3-4.9 1 1-4.7-.4-.6C6.5 18.4 6.2 16.7 6.2 15 6.2 9.5 10.6 5.1 16 5.1S25.8 9.5 25.8 15 21.4 25 16 25zm5.5-6.7c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4-.1-.6l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg></a>
+
+<!-- Sticky CTA mobile -->
+<div class="sticky-cta">
+  <a href="tel:856634720" class="btn-llamar">📞 Llamar ahora<small>Gratis · Plagas Novo</small></a>
+  <a href="#formulario" class="btn-retell">📝 Pedir presupuesto<small>Te llamamos en 1h</small></a>
+</div>
 </body>
 </html>
